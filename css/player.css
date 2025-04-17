@@ -1,0 +1,111 @@
+#player {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 56px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .175);
+    background-color: rgba(0, 0, 0, .02);
+    transition: background-color 200ms;
+}
+
+#player:hover {
+    background-color: rgba(0, 0, 0, .03);
+}
+
+#player-inner {
+    text-align: center;
+    height: 100%;
+}
+
+#player-buttons, #player-info, #player-seekbar-area {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.player-button {
+    display: inline-block;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.player-button:hover .player-button-icon {
+    opacity: .75;
+}
+
+.player-button:active .player-button-icon {
+    opacity: .5;
+}
+
+#player-artwork {
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+    background: rgb(208, 208, 208);
+}
+
+#player-info-text {
+    font-size: 14px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#player-info-text-title {
+    font-weight: 600;
+}
+
+#player-info-text-title, #player-info-text-set, #player-info-text {
+    text-overflow: ellipsis;
+    width: 256px;
+    overflow: hidden;
+}
+
+#player-button-load-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+#player-seekbar {
+    width: 35vw;
+    margin: 0 10px;
+}
+
+#player-seekbar-elapsed, #player-seekbar-total {
+    font-size: 12px;
+    display: inline-block;
+    width: 48px;
+}
+
+#player-seekbar-total {
+    margin-right: 5px;
+}
+
+.player-button-disabled .player-button-icon {
+    opacity: .25 !important;
+}
+
+body #player {
+    bottom: -57px;
+    transition: bottom 200ms, background-color 200ms;
+}
+
+body #navigation-outer, body #frame {
+    bottom: 0;
+    transition: bottom 200ms, background-color 200ms;
+}
+
+body.playing #player {
+    bottom: 0;
+}
+
+body.playing #navigation-outer, body.playing #frame {
+    bottom: 57px;
+}

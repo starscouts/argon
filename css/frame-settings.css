@@ -1,0 +1,15 @@
+#frame-contents {
+    padding: 10px;
+}
+
+#frame-settings-quality-warning {
+    color: #9f7700;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+#frame-settings-unsupported-warning {
+    color: #9f0000;
+    font-size: 12px;
+    padding-top: 5px;
+}

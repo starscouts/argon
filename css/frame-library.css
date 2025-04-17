@@ -1,0 +1,209 @@
+.frame-library-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 20px;
+    cursor: default;
+}
+
+.frame-library-item:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+.frame-library-item:active, .frame-library-item:focus {
+    background: rgba(0, 0, 0, .1);
+}
+
+.frame-library-item-inner {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+}
+
+.frame-library-item-cover-inner {
+    width: 128px;
+}
+
+.frame-library-item-text {
+    display: flex;
+    align-items: center;
+}
+
+.frame-library-item-text-inner {
+    padding-left: 16px;
+    width: calc(100% - 16px);
+}
+
+.frame-library-item-text-title {
+    font-weight: 600;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50vw;
+}
+
+.frame-library-item-set {
+    margin-left: 144px;
+}
+
+@media (max-width: 500px) {
+    .frame-library-item-set {
+        margin-left: 0 !important;
+    }
+}
+
+.frame-library-item-set-song {
+    padding: 5px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: 32px 1fr;
+}
+
+.frame-library-item-set-song:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+.frame-library-item-set-song:active {
+    background: rgba(0, 0, 0, .1);
+}
+
+.frame-library-item-set-song-cover-inner {
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, .25);
+    vertical-align: middle;
+}
+
+.frame-library-item-set-song-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 5px;
+    text-overflow: ellipsis;
+}
+
+#frame-viewer-header {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    background: rgba(200, 200, 200, 1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+#frame-viewer-header-inner {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+}
+
+#frame-viewer-header-cover-inner {
+    width: 128px;
+}
+
+#frame-viewer-header-text {
+    display: flex;
+    align-items: center;
+}
+
+#frame-viewer-header-text-inner {
+    margin-left: 15px;
+}
+
+#frame-viewer-header-text-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#frame-viewer-header-text-linkToSet, #frame-viewer-header-text-linkToOriginal {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+#frame-viewer-header-text-linkToSet:hover, #frame-viewer-header-text-linkToOriginal:hover {
+    text-decoration-color: inherit;
+}
+
+#frame-viewer-header-text-linkToSet:active, #frame-viewer-header-text-linkToSet:focus, #frame-viewer-header-text-linkToOriginal:active, #frame-viewer-header-text-linkToOriginal:focus {
+    opacity: .75;
+}
+
+#frame-viewer-description {
+    padding: 10px;
+}
+
+#frame-viewer-header-play {
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    padding: 5px 10px;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-name: playbtn;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    color: white;
+}
+
+#frame-viewer-header-play:hover {
+    background: rgba(0, 0, 0, .5);
+    border-color: rgba(0, 0, 0, .75) !important;
+}
+
+#frame-viewer-header-play:active {
+    background: rgba(0, 0, 0, .75);
+    border-color: rgba(0, 0, 0, 1) !important;
+}
+
+@keyframes playbtn {
+    0%   { border-color: rgba(0, 0, 0, .5); }
+    100% { border-color: rgba(175, 175, 175, .5); }
+}
+
+#frame-viewer-header-outer {
+    background-size: cover;
+    background-position: center;
+}
+
+#frame-viewer-set {
+    margin-left: 0;
+}
+
+.frame-library-item-set *:not(:nth-last-child(1)) {
+    border-bottom: none;
+}
+
+.frame-library-item-set-song-wip {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.frame-library-wipBadge {
+    background: rgb(255, 190, 0);
+    border: 1px solid rgba(180, 146, 30, 0.5);
+    padding: 0px 5px;
+    border-radius: 999px;
+    margin-left: 5px;
+}
+
+#frame-viewer-header-notPlayable {
+    opacity: .5;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#frame-viewer-header-notAvailableCount {
+    vertical-align: middle;
+    font-size: 12px;
+    color: #9f7700;
+    padding-left: 5px;
+}
+
+@media (max-width: 500px) {
+    #frame-viewer-header-notAvailableCount {
+        padding-left: 0;
+        display: block;
+    }
+}

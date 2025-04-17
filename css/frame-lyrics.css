@@ -1,0 +1,49 @@
+#frame-lyrics-loader, #frame-lyrics-none, #frame-lyrics-play {
+    display: flex;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#frame-lyrics-none-icon {
+    width: 48px;
+}
+
+#frame-lyrics-none-message {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#frame-lyrics-none {
+    opacity: .5;
+}
+
+#frame-lyrics-play-icon {
+    width: 48px;
+}
+
+#frame-lyrics-play-message {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#frame-lyrics-play {
+    opacity: .5;
+}
+
+#frame-lyrics-show {
+    padding: 10px;
+}
+
+#frame-lyrics-show * {
+    cursor: text;
+}
+
+#frame-lyrics-show-copyright {
+    opacity: .5;
+}

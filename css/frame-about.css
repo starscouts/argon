@@ -1,0 +1,52 @@
+#frame-about-general {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+}
+
+#frame-about-general-icon {
+    width: 64px;
+}
+
+#frame-contents {
+    padding: 10px;
+}
+
+#frame-about-general-text {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#frame-about-debug {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.frame-about-section * {
+    max-width: 50vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.frame-about-section {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.frame-about-link {
+    color: #0000c8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.frame-about-link:hover {
+    text-decoration: none;
+}
+
+.frame-about-link:active {
+    opacity: .5;
+}

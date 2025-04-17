@@ -1,0 +1,51 @@
+#frame-home-intro {
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#frame-home-logo {
+    width: 128px;
+}
+
+#frame-home-welcome {
+    font-size: 30px;
+}
+
+#frame-home-tagline {
+    font-size: 18px;
+}
+
+#frame-home-button {
+    margin-top: 10px;
+    background: #400047;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#frame-home-button:hover {
+    background: #5c0e65;
+}
+
+#frame-home-button:active, #frame-home-button:focus {
+    background: #811f8c;
+}
+
+#frame-home-links {
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: .5;
+}
+
+.frame-home-link {
+    color: #5d0e66;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.frame-home-link:hover {
+    text-decoration-color: inherit;
+}

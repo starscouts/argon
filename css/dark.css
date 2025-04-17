@@ -1,0 +1,54 @@
+@media (prefers-color-scheme: dark) {
+    body, html {
+        background: rgb(18, 18, 18);
+        color: white;
+    }
+
+    #frame-viewer-header {
+        background: rgba(28, 28, 28, 1) !important;
+    }
+
+    #frame-viewer-header-play {
+        color: black;
+    }
+
+    #frame-header, #navigation-outer, #player {
+        border-color: rgba(255, 255, 255, .25);
+    }
+
+    .frame-library-item, .frame-library-item-inner, .frame-library-item-set-song-cover, .frame-library-item-set-song-title, #frame-viewer-set, .navigation-item-icon, .player-button-icon, #frame-viewer-header-play {
+        filter: invert(1);
+    }
+
+    #player-seekbar {
+        background: #ffffff;
+    }
+
+    #player-seekbar::-webkit-slider-thumb {
+        background: #aaaaaa;
+    }
+
+    #player-seekbar::-moz-range-thumb {
+        background: #aaaaaa;
+    }
+
+    #player-seekbar::-webkit-slider-thumb:hover {
+        background: #aaaaaabf;
+    }
+
+    #player-seekbar::-moz-range-thumb:hover {
+        background: #aaaaaabf;
+    }
+
+    #frame-header, #navigation-outer, #player {
+        background: rgb(32, 32, 32);
+    }
+
+    #frame-header:hover, #navigation-outer:hover, #player:hover {
+        background: rgb(48, 48, 48);
+    }
+
+    .frame-about-link, .frame-home-link {
+        filter: contrast(0.3) brightness(2);
+    }
+}
